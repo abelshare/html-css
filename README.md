@@ -1,7 +1,4 @@
 # HTML+CSS
-
-## 一本集合虛擬與現實的 3D 書籍
-
 ## HTML 組成介紹，標籤分門別類
 
 [《HTML 參考手冊》](https://www.w3cschool.cn/htmltags/)
