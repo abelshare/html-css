@@ -2,11 +2,9 @@
 
 ## HTML 組成介紹，標籤分類
 
-![head](D:\Users\lxh\project\HTML&CSS\src\img\head.png)
+![head](./src/img/head.png)
 
-![body](D:\Users\lxh\project\HTML&CSS\src\img\body.png)
-
-
+![body](./src/img/body.png)
 
 [《HTML 參考手冊》](https://www.w3cschool.cn/htmltags/)
 
@@ -152,7 +150,7 @@
 
 - 邊框：
 
- 用於控制元素的邊框、邊框的圓角、輪廓，例如：大小，展示方式，顏色
+用於控制元素的邊框、邊框的圓角、輪廓，例如：大小，展示方式，顏色
 
 - 內外間距：
 
@@ -184,7 +182,7 @@
 
 ### 盒子模型
 
-![CSS box-model](../HTML&CSS/src/img/box-model.gif)
+![CSS box-model](./src/img/box-model.gif)
 
 - Margin（外邊距） - 清除邊框區域。 Margin 沒有背景顏色，它是完全透明
 - Border（邊框） - 邊框周圍的填充和內容。邊框是受到盒子的背景顏色影響
@@ -231,8 +229,8 @@
 
 ## ## 下堂課
 
-### SASS語法基礎教學
+### SASS 語法基礎教學
 
 ### Bootstrap 源碼分析
 
-## 
+##
