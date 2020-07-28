@@ -126,7 +126,7 @@
    - %
    - pt
 
-### 主體功能分類
+### 主要功能分類
 
 - 文本：
 
@@ -189,9 +189,9 @@
 - Padding（內邊距） - 清除內容周圍的區域。會受到框中填充的背景顏色影響
 - Content（內容） - 盒子的內容，顯示文本和圖像
 
-寬度計算：
-元素实际宽度（盒子的宽度）=左 Margin+左 Border+左 Padding+Content+右 Padding+右 Border+右 Margin。
-高度計算：
+寬度計算：  
+元素实际宽度（盒子的宽度）=左 Margin+左 Border+左 Padding+Content+右 Padding+右 Border+右 Margin。  
+高度計算：  
 元素实际高度（盒子的高度）=頂部 Margin+頂部 Border+頂部 Padding+Content+底部 Padding+底部 Border+底部 Margin。
 
 與盒子模型相關的屬性:
@@ -227,7 +227,12 @@
 
 ## 經典佈局案例講解
 
-## ## 下堂課
+1. 兩列佈局，左側定寬，右側自適應
+2. 兩列佈局，一列不固定，另一列自適應
+3. 三列佈局，兩側定框，中間自適應
+4. 全局佈局
+
+## 下堂課
 
 ### SASS 語法基礎教學
 
