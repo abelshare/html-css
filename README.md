@@ -64,8 +64,8 @@
 | [#_id_](https://www.w3cschool.cn/cssref/sel-id.html)                                         | #firstname             | 選擇所有 id="firstname" 的元素                                 | 1   |
 | [\*](https://www.w3cschool.cn/cssref/sel-all.html)                                           | \*                     | 選擇所有元素                                                   | 2   |
 | _[element](https://www.w3cschool.cn/cssref/sel-element.html)_                                | p                      | 選擇所有 <p> 元素                                              | 1   |
-| _[element,element](https://www.w3cschool.cn/cssref/sel-element-comma.html)_                  | div,p                  | 選擇所有 <div> 元素和 <p> 元素                                 | 1   |
-| [_element element_](https://www.w3cschool.cn/cssref/sel-element-element.html)                | div p                  | 選擇 <div> 元素內的所有 <p> 元素                               | 1   |
+| _[element,element](https://www.w3cschool.cn/cssref/sel-element-comma.html)_                  | div,p                  | 選擇所有 \<div\> 元素和 <p> 元素                                 | 1   |
+| [_element element_](https://www.w3cschool.cn/cssref/sel-element-element.html)                | div p                  | 選擇 `<div>` 元素內的所有 <p> 元素                               | 1   |
 | [_element_>_element_](https://www.w3cschool.cn/cssref/sel-element-gt.html)                   | div>p                  | 選擇所有父級是 <div> 元素的 <p> 元素                           | 2   |
 | [_element_+_element_](https://www.w3cschool.cn/cssref/sel-element-pluss.html)                | div+p                  | 選擇所有緊接著 <div> 元素之後的 <p> 元素                       | 2   |
 | [[_attribute_\]](https://www.w3cschool.cn/cssref/sel-attribute.html)                         | [target]               | 選擇所有帶有 target 屬性元素                                   | 2   |
