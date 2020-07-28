@@ -32,7 +32,7 @@
 
 3. 層疊：
 
-   是 CSS 的一個基本特徵，它是一個定義瞭如何合併來自多個源的屬性值的算法。它在 CSS 處於核心地位，CSS 的全稱層疊樣式表正是強調了這一點。
+   是 CSS 的一個基本特徵，它是一個定義如何合併來自多個源的屬性值的算法。它在 CSS 處於核心地位，CSS 的全稱層疊樣式表正是強調了這一點。
 
    | 層級 | 來源                      | 重要程度                                                                                           |
    | :--- | :------------------------ | -------------------------------------------------------------------------------------------------- |
@@ -70,7 +70,7 @@
 | [_element_>_element_](https://www.w3cschool.cn/cssref/sel-element-gt.html)                   | div>p                  | 選擇所有父級是 `<div>` 元素的 `<p>` 元素                             | 2   |
 | [_element_+_element_](https://www.w3cschool.cn/cssref/sel-element-pluss.html)                | div+p                  | 選擇所有緊接著 `<div>` 元素之後的 `<p>` 元素                         | 2   |
 | [[_attribute_\]](https://www.w3cschool.cn/cssref/sel-attribute.html)                         | [target]               | 選擇所有帶有 target 屬性元素                                         | 2   |
-| [[_attribute_=_value_\]](https://www.w3cschool.cn/cssref/sel-attribute-value.html)           | [target=-blank]        | 選擇所有使用 target="-blank" 的元素                                  | 2   |
+| [[_attribute_=_value_\]](https://www.w3cschool.cn/cssref/sel-attribute-value.html)           | [target=_blank]        | 選擇所有使用 target="\_blank" 的元素                                 | 2   |
 | [[_attribute_~=_value_\]](https://www.w3cschool.cn/cssref/sel-attribute-value-contains.html) | [title~=flower]        | 選擇標題屬性包含單詞"flower" 的所有元素                              | 2   |
 | [[_attribute_\|=_language_\]](https://www.w3cschool.cn/cssref/sel-attribute-value-lang.html) | [lang\|=en]            | 選擇一個 lang 屬性以 en 為開頭的所有元素                             | 2   |
 | [:link](https://www.w3cschool.cn/cssref/sel-link.html)                                       | a:link                 | 選擇所有未訪問鏈接                                                   | 1   |
