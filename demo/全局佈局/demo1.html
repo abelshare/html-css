@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用position</title>
+    <style>
+      html,
+      body,
+      #parent {
+        height: 100%;
+        overflow: hidden;
+      }
+      #parent > div {
+        border: 1px solid #000;
+      }
+      #top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+      }
+      #left {
+        position: absolute;
+        overflow: auto;
+        top: 100px; /*值大于等于#top的高度*/
+        left: 0;
+        bottom: 50px; /*值大于等于#bottom的高度*/
+        width: 200px;
+      }
+      #right {
+        position: absolute;
+        overflow: auto;
+        left: 200px; /*值大于等于#left的宽度*/
+        right: 0;
+        top: 100px; /*值大于等于#top的高度*/
+        bottom: 50px; /*值大于等于#bottom的高度*/
+      }
+      #bottom {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="top">top</div>
+      <div id="left">
+        left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />left<br />
+      </div>
+      <div id="right">
+        right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />right<br />
+      </div>
+      <div id="bottom">bottom</div>
+    </div>
+  </body>
+</html>

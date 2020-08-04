@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圣杯</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        height: 60px;
+        background-color: darkgray;
+      }
+      #parent {
+        height: 500px;
+        padding: 0 215px 0 115px; /*为了使#center摆正,左右padding分别等于左右盒子的宽,可以结合左右盒子相对定位的left调整间距*/
+      }
+      #left {
+        margin-left: -100%; /*使#left上去一行*/
+        position: relative;
+        left: -115px; /*相对定位调整#left的位置,正值大于或等于自身宽度*/
+        float: left;
+        width: 100px;
+        height: 500px;
+        background-color: #99cccc;
+      }
+      #center {
+        float: left;
+        width: 100%; /*由于#parent的padding,达到自适应的目的*/
+        height: 500px;
+        box-sizing: border-box;
+        border: 1px solid #000;
+        background-color: #ffcccc;
+      }
+      #right {
+        position: relative;
+        left: 215px; /*相对定位调整#right的位置,大于或等于自身宽度*/
+        width: 200px;
+        height: 500px;
+        margin-left: -200px; /*使#right上去一行*/
+        float: left;
+        background-color: #ffcc99;
+      }
+      #footer {
+        height: 60px;
+        background-color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+    <!--中间栏需要放在前面-->
+    <div id="parent">
+      <div id="center">
+        <div id="center_inbox">中间自适应</div>
+        <hr />
+        <!--方便观察原理-->
+      </div>
+      <div id="left">左列定宽</div>
+      <div id="right">右列定宽</div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>

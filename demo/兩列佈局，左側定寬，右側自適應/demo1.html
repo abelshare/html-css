@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用float+margin實現</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #left {
+        background-color: burlywood;
+        float: left;
+        width: 100px;
+        height: 500px;
+      }
+      #right {
+        background-color: aquamarine;
+        height: 500px;
+        margin-left: 100px; /*设置间隔，大于等于#left的宽度*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="left">左側固定</div>
+    <div id="right">右側自定義</div>
+  </body>
+</html>

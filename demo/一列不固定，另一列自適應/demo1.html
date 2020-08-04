@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>利用float+margin實現</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #left {
+        float: left; /*只设置浮动,不设宽度*/
+        height: 500px;
+        background-color: burlywood;
+      }
+      #right {
+        overflow: hidden; /*触发bfc*/
+        height: 500px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="left">左側不固定試一下，真的哦</div>
+    <div id="right">右側自適應</div>
+  </body>
+</html>

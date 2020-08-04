@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用flex</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #parent {
+        display: flex;
+      }
+      #left {
+        /*不设宽度*/
+        margin-right: 10px;
+        height: 500px;
+        background-color: burlywood;
+      }
+      #right {
+        height: 500px;
+        background-color: aquamarine;
+        flex: 1; /*均分#parent剩余的部分*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="left">左側不固定試一下，真的哦</div>
+      <div id="right">右側自定義</div>
+    </div>
+  </body>
+</html>

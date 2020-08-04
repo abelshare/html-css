@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雙飛翼</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        height: 60px;
+        background-color: darkgray;
+      }
+      #left {
+        float: left;
+        width: 100px;
+        height: 500px;
+        margin-left: -100%; /*调整#left的位置,值等于自身宽度*/
+        background-color: #99cccc;
+      }
+      #right {
+        float: left;
+        width: 200px;
+        height: 500px;
+        margin-left: -200px; /*使right到指定的位置,值等于自身宽度*/
+        background-color: #ffcccc;
+      }
+      #center {
+        height: 500px;
+        float: left;
+        width: 100%;
+        background-color: #ffcc99;
+      }
+      #center_inbox {
+        height: 480px;
+        border: 1px solid #000;
+        margin: 0 220px 0 120px; /*关键!!!左右边界等于左右盒子的宽度,多出来的为盒子间隔*/
+      }
+      #footer {
+        clear: both; /*注意清除浮动!!*/
+        height: 60px;
+        background-color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+    <!--中间栏需要放在前面-->
+    <div id="parent">
+      <div id="center">
+        <div id="center_inbox">中间自适应</div>
+        <hr />
+        <!--方便观察原理-->
+      </div>
+      <div id="left">左列定宽</div>
+      <div id="right">右列定宽</div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>

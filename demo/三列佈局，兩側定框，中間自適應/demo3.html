@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用flex</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        height: 60px;
+        background-color: darkgray;
+      }
+      #parent {
+        height: 500px;
+        display: flex;
+      }
+      #left {
+        width: 100px;
+        background-color: #99cccc;
+      }
+      #center {
+        flex: 1; /*均分#parent剩余的部分*/
+        background-color: #ffcccc;
+      }
+      #right {
+        width: 200px;
+        background-color: #ffcc99;
+      }
+      #footer {
+        height: 60px;
+        background-color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="parent">
+      <div id="left">左列定宽</div>
+      <div id="center">中间自适应</div>
+      <div id="right">右列定宽</div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
